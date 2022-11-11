@@ -4,62 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../html/my-daily.css">
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/762078615f.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>My Daily Journal</title>
+    <div class="topnav">
+        <img class="logo-img" src="../images/logo.png" width="75" height="65" ALT="align box" ALIGN=CENTER>
+        <a class="active" href="">Daily Fit Nutrition</a>
+        <a href="">Login</a>
+        <a href="">My Diary</a>
+      </div>
 </head>
 <body>
     <section id="meals">
-        <h2>Daily Meals</h2>
-        <p>some food items combinations with required nutrition</p>
+        <h2>My Daily Food Diary</h2>
         <div class="meal-container">
             <div class="meal">
-                <img src="image/food/break3.svg" alt="morning">
-                <span>Morning</span>
                 <h4>Breakfast</h4>
+                <input type="text" id="br" placeholder="Search..">
+                <button class="btn btn-primary" onclick="Calo()">Add Food</button>
+                <button class="btn btn-danger" onclick="Clear()">Clear</button>
             </div>
-        
-        
+            <hr>
             <div class="meal">
-                <img src="image/food/snacks.svg" alt="morning">
-                <span>Evening</span>
                 <h4>Snacks</h4>
+                <input type="text" id="snack" placeholder="Search..">
+                <button class="btn btn-primary" onclick="Calo()">Add Food</button>
+                <button class="btn btn-danger" onclick="Clear()">Clear</button>
             </div>
-        
-        
+            <hr>
             <div class="meal">
-                <img src="image/food/lunch1.svg" alt="morning">
-                <span>Day</span>
                 <h4>Lunch</h4>
+                <input type="text" id="lu" placeholder="Search..">
+                <button class="btn btn-primary" onclick="Calo()">Add Food</button>
+                <button class="btn btn-danger" onclick="Clear()">Clear</button>
             </div>
-       
-        
+            <hr>
             <div class="meal">
-                <img src="image/food/dinner1.svg" alt="morning">
-                <span>Night</span>
                 <h4>Dinner</h4>
+                <input type="text" id="din" placeholder="Search..">
+                <button class="btn btn-primary" onclick="Calo()">Add Food</button>
+                <button class="btn btn-danger" onclick="Clear()">Clear</button>
             </div>
 
+            <p id="resultcal"></p>
 
-            <section id="water">
-                <h2>Water Consumption </h2>
-                <div class="water-container">
-                    <div class="water">
-                        <i class="fa-solid fa-droplet"></i>
-                        <h4> 1 Cup</h4>
-                    </div>
-
-            <div class="col-md-6">
-                <div class="line-chart">
-                    <h1>Calorie Count</h1>
-                </div>
-            </div> 
         </div>
-    </section>        
+        <br>
+        <table>
+            <tr>
+              <th>Calories</th>
+              <th>Carbs</th>
+              <th>Fat</th>
+              <th>Protein</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+          </table>
+          <br>
 
-    <script src="./calChart.js"></script>
+        <div class="col-md-6">
+            <div class="line-chart">
+                <h1>Calorie Tracker</h1>
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+       
+ 
+    </section>
+
+    <script src="./my-daily.js"></script>
 
 </body>
 </html>
-   
