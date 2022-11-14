@@ -37,18 +37,22 @@
 
 .meal-container {
     max-width: 50rem; 
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: left;
     margin: auto; 
-    border: 3px solid black; 
     width: 50%; 
     margin-top: 30px; 
+    padding-bottom: 15px;
     min-width: 20rem;
     border-radius: 10px;
+    border: 2.5px solid #929FBA;
+    background-color: #929FBA(212, 212, 212, 0.6)
     
-
-
 }
 
 hr { 
+    position: relative;
     display: block; 
     overflow: hidden; 
     border-style: inset; 
@@ -80,8 +84,21 @@ table, th, td {
     border:1px solid black;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 40%;
     table-layout: fixed;
 }
-
-
+.goal-container {
+    column-count: 3;
+    text-align: center;
+    text-decoration: underline;
+    width:600px;
+    height:100px;
+    border: 2.5px solid #929FBA;
+    background-color: #929FBA(212, 212, 212, 0.6)
+    align-items: center;
+    padding-top:20px;
+    padding-left:10px;
+    padding-right:5px;
+    margin: auto; 
+    border-radius: 10px;
+}
