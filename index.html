@@ -3,216 +3,189 @@
 	<head>
 		<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>Daily Fit Nutrition </title>
+		<title>Daily Fit Nutrition</title>
 		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <!-- Googlefonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
-    <!-- CSS only -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/762078615f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css" type="text/css">
-	</head>
+    <link rel="stylesheet" href="./style.css" type="text/css"> 
+  </head>
 
-  <header>
-    <div class="topnav">
-        <img class="logo-img" src="./images/logo.png" width="75" height="65" ALT="align box" ALIGN=CENTER>
-        <a class="active" href="">Daily Fit Nutrition</a>
-        <a href="./login.html">Login</a>
-        <a href="./my-daily.html">My Diary</a>
-    </div>
-  </header>
-    
-	  <body>
-        <!-- Background image -->
-       <div
-          class="p-5 text-center bg-image"
-          style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');height: 500px;margin-top: 75px;">
-          <div class="mask" style="background-color: rgba(212, 212, 212, 0.6);">
-             <div class="d-flex justify-content-center align-items-center h-100">
-                    <div class="text-black">
-                      <h1 class="mb-3">COUNT YOUR DAILY CALORIES TODAY!</h1>
-                      <h4 class="mb-3">The simplest way to count calories on the daily basis. No complicated math or things you don't understand, just the basics</h4>
-                       <a class="btn btn-outline-light btn-lg" href="#!" role="button" style="color: black;">Sign Up for Free</a>
-                  </div>
-              </div>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg" style="background-color: #929fba">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="./index.html"><img class="logo-img" src="./images/logo.png" width="75" height="65" ALT="align box" ALIGN=CENTER>Daily Fit Nutrition</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link text-white" href="./my-daily.html">My Diary</a>
+              <a class="nav-link text-white" href="./login.html">Login</a>
+            </div>
           </div>
-      </div>
-       <!-- Background image -->
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+        
+        <!-- Background image -->
+        <div
+            class="p-5 text-center bg-image"
+            style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');height: 500px;margin-top: 75px;">
+            <div class="mask" style="background-color: rgba(212, 212, 212, 0.6);">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-black">
+                        <h1 class="mb-3">COUNT YOUR DAILY CALORIES TODAY!</h1>
+                        <h4 class="mb-3">The simplest way to count calories on the daily basis. No complicated math or things you don't understand, just the basics</h4>
+                        <a class="btn btn-outline-light btn-lg" href="./registration.html" role="button" style="color: black;">Sign Up for Free</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Background image -->
 
         <div class="row">
             <div class="column">
-              <img src="images/one.svg" alt="step one"  width="100" height="100">
-              <h2> Step One</h2> 
-              <button style="background-color: #929fba; color: white;"button type="button" class="btn btn-default btn-lg btn-block">Click Here To sign up </button>
+                <img src="images/one.svg" alt="step one"  width="100" height="100">
+                <h2> Step One</h2> 
+                <a href="./registration.html"><button style="background-color: #929fba; color: white;"button type="button" class="btn btn-default btn-lg btn-block">Click Here To sign up </button> </a>
             </div>
+
             <div class="column">
-              <img src="images/2.svg" alt="step two" width="100" height="100">
-              <h2>Step Two</h2>
-              <button style="background-color: #929fba; color: white;"button type="button" class="btn btn-default btn-lg btn-block">My Diary</button>
-          </div> 
+                <img src="images/2.svg" alt="step two" width="100" height="100">
+                <h2>Step Two</h2>
+                <a href="./my-daily.html"><button style="background-color: #929fba; color: white;"button type="button" class="btn btn-default btn-lg btn-block">My Diary</button></a>
+            </div> 
         </ul> 
 
         <!--body-->
         <div class="goals">
-          <div class="food">
+            <div class="food">
             <img src="images/nutiriton.jpg" width="75%" height="75%" alt="food" >
-          </div>
-          <div class="text">
+            </div>
+            <div class="text">
             <h1>Tools For Your Goals</h1>
-              <p>3 things that this app will do for you, for the present and for your future goals</p>  
-          </div>
+            <p>3 things that this app will do for you, for the present and for your future goals</p>  
+            </div>
         </div>
-    
+
         <div class="row">
-          <div class="column">
+            <div class="column">
             <img src="images/booking.svg" alt="food" width="100" height="100">
             <h2>My Diary</h2> 
-              <p>Your own personal diary for breakfast,lunch,dinner,drinks, and snacks for every day tracking </p>
-          </div>
-          <div class="column">
+            <p>Your own personal diary for breakfast,lunch,dinner,drinks, and snacks for every day tracking </p>
+            </div>
+            <div class="column">
             <img src="images/floppy disk.svg" alt="food" width="100" height="100">
             <h2>Logging / Saving</h2>
-              <p>You can manually put in the foods you ate through out the day to keep track of your calories</p>
-        </div>  
+            <p>You can manually put in the foods you ate through out the day to keep track of your calories</p>
+        </div> 
+
         <div class="column">
-          <img src="images/person walking.svg" alt="food" width="100" height="100">
-          <h2>Keep Motivated</h2>
+            <img src="images/person walking.svg" alt="food" width="100" height="100">
+            <h2>Keep Motivated</h2>
              <p>Makes you have a daily healthy routine and keeps you going towards your goal</p>
-      </div>  
-			<!--Recipes section-->	
-    <div class="receipes">
-      <div class="image">
-        <img src="images/receipe.png" width="65%" height="65%" alt="receipe">
-      </div>
-      <div class="text">
-        <h1>Recipes & Inspiration</h1>
-          <p>Healthy foods and recipes that can help with your journey</p>
-          <button style="background-color: #929fba; color: white;"button type="button" class="btn btn-default btn-lg btn-block">Click Here for Inspo</button>
-          
-      </div>
+        </div>  
+        
+        <!--Recipes section-->	
+        <div class="receipes">
+            <div class="image">
+            <img src="images/receipe.png" width="65%" height="65%" alt="receipe">
+            </div>
+            <div class="text">
+            <h1>Recipes & Inspiration</h1>
+            <p>Healthy foods and recipes that can help with your journey</p>
+            <button style="background-color: #929fba; color: white;"button type="button" class="btn btn-default btn-lg btn-block">Click Here for Inspo</button>
+            
+        </div>
     </div>
+    
+        
+    </main>
 
-	  </body>
-    <!-- Footer -->
-    <footer
-            class="text-center text-lg-start text-white"
-            style="background-color: #929fba"
-            >
-      <!-- Grid container -->
-      <div class="container p-4 pb-0">
-        <!-- Section: Links -->
-        <section class="">
-          <!--Grid row-->
-          <div class="row">
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">
-                My Fit Nutrition
-              </h6>
-              <p>
-                An app/website where you can track your calories, the simple way
-              </p>
-            </div>
-            <!-- Grid column -->
-  
-            <hr class="w-100 clearfix d-md-none" />
-  
-            <!-- Grid column -->
-  
-            <hr class="w-100 clearfix d-md-none" />
-  
-            <!-- Grid column -->
-            <hr class="w-100 clearfix d-md-none" />
-  
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-              <p><i class="fas fa-home mr-3"></i> 1234 West Gate St, Austin TX 78745</p>
-              <p><i class="fas fa-envelope mr-3"></i> myfitnutrition@gmail.com</p>
-              <p><i class="fas fa-phone mr-3"></i> 787-675-0934</p>
-            </div>
-            <!-- Grid column -->
-  
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
-  
-              <!-- Facebook -->
-              <a
-                 class="btn btn-primary btn-floating m-1"
-                 style="background-color: #3b5998"
-                 href="https://Facebook.com/"
-                 role="button"
-                 ><i class="fab fa-facebook-f"></i
-                ></a>
+    <!-- BREAK FOOTER-->
+    <footer class=" text-white" style="background-color: #929fba">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <p>MY FIT NUTRITION</p>
+            <p>An app/website where you can track your calories, the simple way.</p>
+          </div>
 
-                <!-- Pinterest -->
-              <a
-              class="btn btn-primary btn-floating m-1"
+          <div class="col">
+            <p>CONTACT</p> 
+            <p><i class="fas fa-home mr-3"></i> 1234 West Gate St, Austin TX 78745</p>
+            <p><i class="fas fa-envelope mr-3"></i> myfitnutrition@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> 787-675-0934</p>
+          </div>
+
+          <div class="col">
+            <p>FOLLOW US</p>
+            <!-- Facebook -->
+            <a class="btn btn-primary btn-floating m-1"
+              style="background-color: #3b5998"
+              href="https://Facebook.com/"
+              role="button">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <!-- Pinterest -->
+            <a class="btn btn-primary btn-floating m-1"
               style="background-color: #d63631"
               href="https://Pinterest.com/"
-              role="button"
-              ><i class="fa-brands fa-square-pinterest"></i
-             ></a>
-  
-              <!-- Twitter -->
-              <a
-                 class="btn btn-primary btn-floating m-1"
-                 style="background-color: #55acee"
-                 href="https://twitter.com"
-                 role="button"
-                 ><i class="fab fa-twitter"></i
-                ></a>
-  
-              <!-- Google -->
-              <a
-                 class="btn btn-primary btn-floating m-1"
-                 style="background-color: #2f9144"
-                 href="https://www.google.com/"
-                 role="button"
-                 ><i class="fab fa-google"></i
-                ></a>
-  
-              <!-- Instagram -->
-              <a
-                 class="btn btn-primary btn-floating m-1"
-                 style="background-color: #ac2bac"
-                 href="https://www.instagram.com/"
-                 role="button"
-                 ><i class="fab fa-instagram"></i
-                ></a>
+              role="button">
+              <i class="fa-brands fa-square-pinterest"></i>
+            </a>
 
-              <!-- Github -->
-              <a
-                 class="btn btn-primary btn-floating m-1"
-                 style="background-color: #333333"
-                 href="https://github.com/"
-                 role="button"
-                 ><i class="fab fa-github"></i
-                ></a>
-            </div>
+            <!-- Twitter -->
+            <a class="btn btn-primary btn-floating m-1"
+              style="background-color: #55acee"
+              href="https://twitter.com"
+              role="button">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <!-- Google -->
+            <a class="btn btn-primary btn-floating m-1"
+              style="background-color: #2f9144"
+              href="https://www.google.com/"
+              role="button">
+              <i class="fab fa-google"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a class="btn btn-primary btn-floating m-1"
+              style="background-color: #ac2bac"
+              href="https://www.instagram.com/"
+              role="button">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- Github -->
+            <a class="btn btn-primary btn-floating m-1"
+              style="background-color: #333333"
+              href="https://github.com/"
+              role="button">
+              <i class="fab fa-github"></i>
+            </a>
           </div>
-          <!--Grid row-->
-        </section>
-        <!-- Section: Links -->
-      </div>
-      <!-- Grid container -->
-  
-      <!-- Copyright -->
-      <div
-           class="text-center p-3"
-           style="background-color: rgba(0, 0, 0, 0.2)"
-           >
-        © 2022 Copyright My Fit Nutrition
-      </div>
-     
-    </footer>
-  </div>
-    <!-- End of .container -->
-          </span>
         </div>
       </div>
-    </nav>
+      <div id="copyright" class="text-center p-0" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 Copyright My Fit Nutrition
+      </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="./registration.js"></script>
+  </body>
 </html>
